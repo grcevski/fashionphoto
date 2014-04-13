@@ -19,8 +19,9 @@
 		3F6B9457186A268D0072F7F4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6B9456186A268D0072F7F4 /* XCTest.framework */; };
 		3F6B9458186A268D0072F7F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6B9437186A268D0072F7F4 /* Foundation.framework */; };
 		3F6B9459186A268D0072F7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6B943B186A268D0072F7F4 /* UIKit.framework */; };
-		3F6B9461186A268D0072F7F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B945F186A268D0072F7F4 /* InfoPlist.strings */; };
-		3F6B9463186A268D0072F7F4 /* FashionPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B9462186A268D0072F7F4 /* FashionPhotoTests.m */; };
+		3F6B946D186A28310072F7F4 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6B946C186A28310072F7F4 /* opencv2.framework */; };
+		3F6B946F186A2FA90072F7F4 /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B946E186A2FA90072F7F4 /* Tink.aiff */; };
+		3F6B9473186A419D0072F7F4 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B9472186A419D0072F7F4 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +51,10 @@
 		3F6B944F186A268D0072F7F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F6B9455186A268D0072F7F4 /* FashionPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6B9456186A268D0072F7F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3F6B945E186A268D0072F7F4 /* FashionPhotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FashionPhotoTests-Info.plist"; sourceTree = "<group>"; };
-		3F6B9460186A268D0072F7F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3F6B9462186A268D0072F7F4 /* FashionPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FashionPhotoTests.m; sourceTree = "<group>"; };
+		3F6B946C186A28310072F7F4 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3F6B946E186A2FA90072F7F4 /* Tink.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = Tink.aiff; path = Resources/Tink.aiff; sourceTree = SOURCE_ROOT; };
+		3F6B9471186A419D0072F7F4 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		3F6B9472186A419D0072F7F4 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6B946D186A28310072F7F4 /* opencv2.framework in Frameworks */,
 				3F6B943A186A268D0072F7F4 /* CoreGraphics.framework in Frameworks */,
 				3F6B943C186A268D0072F7F4 /* UIKit.framework in Frameworks */,
 				3F6B9438186A268D0072F7F4 /* Foundation.framework in Frameworks */,
@@ -83,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				3F6B943D186A268D0072F7F4 /* FashionPhoto */,
-				3F6B945C186A268D0072F7F4 /* FashionPhotoTests */,
 				3F6B9436186A268D0072F7F4 /* Frameworks */,
 				3F6B9435186A268D0072F7F4 /* Products */,
 			);
@@ -101,6 +103,7 @@
 		3F6B9436186A268D0072F7F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F6B946C186A28310072F7F4 /* opencv2.framework */,
 				3F6B9437186A268D0072F7F4 /* Foundation.framework */,
 				3F6B9439186A268D0072F7F4 /* CoreGraphics.framework */,
 				3F6B943B186A268D0072F7F4 /* UIKit.framework */,
@@ -112,6 +115,8 @@
 		3F6B943D186A268D0072F7F4 /* FashionPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				3F6B9471186A419D0072F7F4 /* UIImage+ImageEffects.h */,
+				3F6B9472186A419D0072F7F4 /* UIImage+ImageEffects.m */,
 				3F6B9446186A268D0072F7F4 /* AppDelegate.h */,
 				3F6B9447186A268D0072F7F4 /* AppDelegate.m */,
 				3F6B9449186A268D0072F7F4 /* Main.storyboard */,
@@ -126,28 +131,11 @@
 		3F6B943E186A268D0072F7F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F6B946E186A2FA90072F7F4 /* Tink.aiff */,
 				3F6B943F186A268D0072F7F4 /* FashionPhoto-Info.plist */,
 				3F6B9440186A268D0072F7F4 /* InfoPlist.strings */,
 				3F6B9443186A268D0072F7F4 /* main.m */,
 				3F6B9445186A268D0072F7F4 /* FashionPhoto-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3F6B945C186A268D0072F7F4 /* FashionPhotoTests */ = {
-			isa = PBXGroup;
-			children = (
-				3F6B9462186A268D0072F7F4 /* FashionPhotoTests.m */,
-				3F6B945D186A268D0072F7F4 /* Supporting Files */,
-			);
-			path = FashionPhotoTests;
-			sourceTree = "<group>";
-		};
-		3F6B945D186A268D0072F7F4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3F6B945E186A268D0072F7F4 /* FashionPhotoTests-Info.plist */,
-				3F6B945F186A268D0072F7F4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,6 +219,7 @@
 				3F6B9450186A268D0072F7F4 /* Images.xcassets in Resources */,
 				3F6B9442186A268D0072F7F4 /* InfoPlist.strings in Resources */,
 				3F6B944B186A268D0072F7F4 /* Main.storyboard in Resources */,
+				3F6B946F186A2FA90072F7F4 /* Tink.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6B9461186A268D0072F7F4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6B9473186A419D0072F7F4 /* UIImage+ImageEffects.m in Sources */,
 				3F6B944E186A268D0072F7F4 /* ViewController.m in Sources */,
 				3F6B9448186A268D0072F7F4 /* AppDelegate.m in Sources */,
 				3F6B9444186A268D0072F7F4 /* main.m in Sources */,
@@ -259,7 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6B9463186A268D0072F7F4 /* FashionPhotoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +276,6 @@
 				3F6B944A186A268D0072F7F4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3F6B945F186A268D0072F7F4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F6B9460186A268D0072F7F4 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -378,10 +358,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nino/Documents/Projects/FashionPhoto,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FashionPhoto/FashionPhoto-Prefix.pch";
 				INFOPLIST_FILE = "FashionPhoto/FashionPhoto-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+					"-stdlib=libc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5331E773-6029-4D79-9AA2-3E3FD6C58C7F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +382,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nino/Documents/Projects/FashionPhoto,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FashionPhoto/FashionPhoto-Prefix.pch";
 				INFOPLIST_FILE = "FashionPhoto/FashionPhoto-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+					"-stdlib=libc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5331E773-6029-4D79-9AA2-3E3FD6C58C7F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +462,7 @@
 				3F6B9468186A268E0072F7F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F6B9469186A268E0072F7F4 /* Build configuration list for PBXNativeTarget "FashionPhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +471,7 @@
 				3F6B946B186A268E0072F7F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
